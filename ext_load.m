@@ -1,5 +1,6 @@
 % Applies the external loads and moments at specified GDOF
 % ext_load(Load_Vector, External_Point_Load, External_Moment)
+
 function F = ext_load(F,P,M) 
 for ii = 1:size(P,1)
     if(P(ii,2)~=0)
